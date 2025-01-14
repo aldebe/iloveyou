@@ -1,1 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun, Cantik 15 JANUARI 2000!</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-top: 60px;
+            color: #fff;
+            font-family: 'Times New Roman', serif;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+            letter-spacing: 5px;
+            font-weight: bold;
+            animation: fadeIn 2s ease-out;
+        }
+
+        p {
+            font-size: 1.6em;
+            margin: 20px 0;
+            color: #ff0088;
+            line-height: 1.8;
+            font-style: italic;
+            font-family: 'Times New Roman', serif;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .heart {
+            font-size: 90px;
+            color: #f44336;
+            animation: pulse 1.5s infinite;
+        }
+
+        .book {
+            width: 90%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 30px;
+            background: #1d1b1b;
+            border-radius: 25px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+            position: relative;
+            padding-bottom: 50px;
+            animation: zoomIn 1s ease-out;
+        }
+
+        .page {
+            background: #2a2a2a;
+            border: 1px solid #ff0095;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            position: relative;
+            display: none;
+            animation: fadeInPage 1s ease-out;
+        }
+
+        .page img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            margin-top: 20px;
+            animation: fadeInImage 1.5s ease-out;
+        }
+
+        .quote-container {
+            padding: 30px;
+            margin-bottom: 40px;
+            border-radius: 20px;
+            background: #2c2c2c;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            animation: fadeInQuote 2s ease-out;
+        }
+
+        .quote-container p {
+            font-size: 1.8em;
+            color: #ff007b;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .navigation-button {
+            margin-top: 30px;
+            padding: 12px 35px;
+            background: #f44336;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            font-size: 1.4em;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .navigation-button:hover {
+            background: #d32f2f;
+            transform: scale(1.1);
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 1.2em;
+            color: #ff0062;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            font-style: italic;
+        }
+
+        .footer a {
+            color: #ff0073;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            color: #f43692;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.9; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.9; }
+        }
+
+        @keyframes zoomIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes fadeInPage {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInImage {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes fadeInQuote {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .book {
+                width: 95%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2.8em;
+            }
+
+            p {
+                font-size: 1.4em;
+            }
+
+            .heart {
+                font-size: 70px;
+            }
+
+            .navigation-button {
+                font-size: 1.2em;
+                padding: 12px 30px;
+            }
+
+            .quote-container p {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book">
+        <h1>Selamat Ulang Tahun, Cantik 15 JANUARI 2000 <span class="heart">❤️</span></h1>
+        <p>Di hari yang spesial ini, aku hanya ingin mengatakan betapa berartinya dirimu bagi hidupku. Setelah melalui masa-masa yang gelap, kehadiranmu adalah warna yang kembali memberi arti. Kamu membuatku melihat segala sesuatu dengan cara yang baru, dan aku bersyukur untuk itu.</p>
+
+        <!-- Halaman pertama -->
+        <div class="page" id="page1">
+            <p>"Kamu hebat kamu kuat, kamu wanita yang sangat baik dan sangat sempurna bagi aku,semoga semua apa yang kamu inginkan tercapai ya cantikk"</p>
+            <img src="https://i.ibb.co/0JXNTQB/Untitled-design.png" alt="Lukisan Kenangan 1">
+            <button class="navigation-button" onclick="showPage(2)">Lanjut baca ya ..</button>
+        </div>
+
+        <!-- Halaman kedua -->
+        <div class="page" id="page2">
+            <p>"Setiap momen yang kita lewati bersama adalah sesuatu yang tak bisa diukur dengan apapun. Kenangan itu, akan selalu aku simpan, dan aku tak akan pernah membiarkannya pudar."</p>
+            <img src="https://i.ibb.co/D7q6mXC/Untitled-design-1.png" alt="Lukisan Kenangan 2">
+            <button class="navigation-button" onclick="showPage(3)">Lanjut di baca yaa cantikk</button>
+            <button class="navigation-button" onclick="showPage(1)">Kalau mau baca halaman sebelumnya nya klik ini ya</button>
+        </div>
+
+        <!-- Halaman ketiga -->
+        <div class="page" id="page3">
+            <p>"Hari ini umur kamu semakin bertambah , dan cantik kamu juga selalu bertambah dan setiap hari cantik hehe"</p>
+            <img src="https://i.ibb.co/tpPKNmx/Untitled-design-2.png" alt="Lukisan Kenangan 3">
+            <button class="navigation-button" onclick="showPage(4)">Lanjut di baca yaa cantikk</button>
+            <button class="navigation-button" onclick="showPage(2)">Kalau mau baca halaman sebelumnya nya klik ini ya</button>
+        </div>
+
+        <!-- Halaman keempat -->
+        <div class="page" id="page4">
+            <p>"Kamu cantik , kamu baik ,tetap humble ya ,tetap jadi ira yang ceria dan cantikk I LOVE YOU"</p>
+            <img src="https://i.ibb.co/9Wm2dkv/Untitled-design-3.png" alt="Lukisan Kenangan 4">
+            <button class="navigation-button" onclick="showPage(5)">Lanjut di baca yaa cantikk</button>
+            <button class="navigation-button" onclick="showPage(3)">Kalau mau baca halaman sebelumnya nya klik ini ya</button>
+        </div>
+
+        <!-- Halaman kelima -->
+        <div class="page" id="page5">
+            <p>"Sekali lagi Selamat ulang tahun semoga semua yang di inginkan tercapai , sehat selalu panjang umur , dan ingat aku akan selalu bersama mu sampai kapan pun itu ILOVE YOUU"</p>
+            <img src="https://i.ibb.co/wc0j25p/Untitled-design-4.png" alt="Lukisan Kenangan 5">
+            <button class="navigation-button" onclick="showPage(6)">Lanjut di baca yaa cantikk</button>
+            <button class="navigation-button" onclick="showPage(4)">Kalau mau baca halaman sebelumnya nya klik ini ya</button>
+        </div>
+
+        <!-- Tambahkan Halaman 6 hingga Halaman 10 dengan cara yang sama -->
+
+        <div class="footer">
+            <p>Di buat pakai hati hehe ❤️ by <a href="#">Nolxfly</a>. Script design ini khusus buat ulangtahun kamu</p>
+        </div>
+    </div>
+
+    <script>
+        // Function to show pages one by one
+        function showPage(pageNumber) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach((page) => page.style.display = 'none'); // hide all pages
+
+            const pageToShow = document.getElementById('page' + pageNumber);
+            pageToShow.style.display = 'block'; // show the selected page
+        }
+
+        // Show first page initially
+        showPage(1);
+    </script>
+
+</body>
+</html>
 
